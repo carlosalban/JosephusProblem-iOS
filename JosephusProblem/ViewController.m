@@ -79,10 +79,8 @@ BOOL personStay = NO;
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     
-    personStay = NO;
-    self.initialChairs = [self.numberField.text integerValue];
-    [self calculatePattern:[self initalizeList: self.initialChairs]];
-    self.resultLabel.text = [NSString stringWithFormat:@"chair number is %lu", (unsigned long)self.finalPerson.chairNumber];
+    self.resultLabel.text = @"Calculating...";
+    self.numberField.userInteractionEnabled = NO;
     
     [UIView animateWithDuration:0.3
                      animations:^{
@@ -92,6 +90,14 @@ BOOL personStay = NO;
                      }completion:^(BOOL finished){
                          [self fadeOutResultLabel];
                      }];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        personStay = NO;
+        self.initialChairs = [self.numberField.text integerValue];
+        [self calculatePattern:[self initalizeList: self.initialChairs]];
+        self.resultLabel.text = [NSString stringWithFormat:@"chair number is %lu", (unsigned long)self.finalPerson.chairNumber];
+        self.numberField.userInteractionEnabled = YES;
+    });
 }
 
 -(void)fadeOutResultLabel{
