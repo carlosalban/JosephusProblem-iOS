@@ -87,9 +87,9 @@
 				07C681F71B801A2000ABC7C5 /* AppDelegate.h */,
 				07C681F81B801A2000ABC7C5 /* AppDelegate.m */,
 				07C681FA1B801A2000ABC7C5 /* ViewController.h */,
+				07C681FB1B801A2000ABC7C5 /* ViewController.m */,
 				07C682191B801A9E00ABC7C5 /* Person.h */,
 				07C6821A1B801A9E00ABC7C5 /* Person.m */,
-				07C681FB1B801A2000ABC7C5 /* ViewController.m */,
 				07C681FD1B801A2000ABC7C5 /* Main.storyboard */,
 				07C682001B801A2000ABC7C5 /* Images.xcassets */,
 				07C682021B801A2000ABC7C5 /* LaunchScreen.xib */,
@@ -422,6 +422,7 @@
 				07C682151B801A2000ABC7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C682161B801A2000ABC7C5 /* Build configuration list for PBXNativeTarget "JosephusProblemTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				07C682181B801A2000ABC7C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
