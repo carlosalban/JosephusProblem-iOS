@@ -19,13 +19,7 @@ BOOL personStay = NO;
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     [self createMainView];
-    
-    
-    //NSLog(@"Final chair %lu", (unsigned long)self.finalPerson.chairNumber);
-    
-    
 }
 
 -(void)createMainView{
@@ -46,7 +40,6 @@ BOOL personStay = NO;
     self.resultLabel.font = [UIFont fontWithName:@"Devanagari Sangam MN" size:25.0f];
     self.resultLabel.alpha = 0;
     
-    
     //TextField Properties
     self.numberField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 150, 150)];
     self.numberField.center = CGPointMake(screenSize.width/2, screenSize.height/2 - 40);
@@ -65,8 +58,6 @@ BOOL personStay = NO;
     [self.view addSubview:self.numberField];
     [self.view addSubview:self.titleLabel];
     [self.view addSubview:self.resultLabel];
-    
-    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -84,7 +75,6 @@ BOOL personStay = NO;
                      }completion:^(BOOL finished){
                          
                      }];
-    
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
@@ -102,7 +92,6 @@ BOOL personStay = NO;
                      }completion:^(BOOL finished){
                          [self fadeOutResultLabel];
                      }];
-    
 }
 
 -(void)fadeOutResultLabel{
@@ -116,7 +105,6 @@ BOOL personStay = NO;
                      completion:^(BOOL finished){
                          
                      }];
-    
 }
 
 -(NSMutableArray*)initalizeList: (NSUInteger)Nchairs{
@@ -141,7 +129,6 @@ BOOL personStay = NO;
         Person *newPerson = [Person new];
         newPerson.chairNumber = i+1;
         [returned addObject:newPerson];
-        
     }
     
     return returned;
@@ -167,16 +154,10 @@ BOOL personStay = NO;
         return;
     }
     
-    
     self.finalPerson = [tempList objectAtIndex:0]; //Result we care about
     
     return;
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
