@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, assign) NSUInteger initialChairs;
+@property (nonatomic, strong) Person* finalPerson;
+@property (nonatomic, strong) UITextField *numberField;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *resultLabel;
 
 
 @end

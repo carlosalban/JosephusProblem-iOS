@@ -14,6 +14,7 @@
 		07C682011B801A2000ABC7C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C682001B801A2000ABC7C5 /* Images.xcassets */; };
 		07C682041B801A2000ABC7C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C682021B801A2000ABC7C5 /* LaunchScreen.xib */; };
 		07C682101B801A2000ABC7C5 /* JosephusProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C6820F1B801A2000ABC7C5 /* JosephusProblemTests.m */; };
+		07C6821B1B801A9E00ABC7C5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C6821A1B801A9E00ABC7C5 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		07C682091B801A2000ABC7C5 /* JosephusProblemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JosephusProblemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C6820E1B801A2000ABC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07C6820F1B801A2000ABC7C5 /* JosephusProblemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JosephusProblemTests.m; sourceTree = "<group>"; };
+		07C682191B801A9E00ABC7C5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		07C6821A1B801A9E00ABC7C5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				07C681F71B801A2000ABC7C5 /* AppDelegate.h */,
 				07C681F81B801A2000ABC7C5 /* AppDelegate.m */,
 				07C681FA1B801A2000ABC7C5 /* ViewController.h */,
+				07C682191B801A9E00ABC7C5 /* Person.h */,
+				07C6821A1B801A9E00ABC7C5 /* Person.m */,
 				07C681FB1B801A2000ABC7C5 /* ViewController.m */,
 				07C681FD1B801A2000ABC7C5 /* Main.storyboard */,
 				07C682001B801A2000ABC7C5 /* Images.xcassets */,
@@ -221,6 +226,7 @@
 			files = (
 				07C681FC1B801A2000ABC7C5 /* ViewController.m in Sources */,
 				07C681F91B801A2000ABC7C5 /* AppDelegate.m in Sources */,
+				07C6821B1B801A9E00ABC7C5 /* Person.m in Sources */,
 				07C681F61B801A2000ABC7C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
