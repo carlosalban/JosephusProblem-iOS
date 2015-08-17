@@ -1,4 +1,4 @@
-# iOSJosephusProblem
+# JosephusProblem-iOS
 
 Object Oriented solution to a modified version of the Josephus problem
 
