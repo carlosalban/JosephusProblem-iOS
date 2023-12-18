@@ -1,6 +1,6 @@
 # JosephusProblem-iOS
 
-Object Oriented solution to a modified version of the Josephus problem
+My solution to a variation of the Josephus problem (see below).
 
 K = 2 (the count of each step). N can be entered by the user.
 
